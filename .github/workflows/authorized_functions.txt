@@ -1,0 +1,17 @@
+open
+fopen
+read
+fread
+write
+fwrite
+close
+fclose
+stat
+lstat
+lseek
+fseek
+getline
+malloc
+realloc
+free
+memset
