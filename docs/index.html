@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/scss/_variables.scss">
+        <link rel="stylesheet" href="/scss/_bootswatch.scss">
+        <link rel="icon" href="/data/img/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/data/img/favicon.ico" type="image/x-icon">
+        <title>Corewar | ItsKarmaOff's GitHub Profile</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand">ItsKarmaOff</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/language-and-tools">Languages and Tools</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Projects</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/42sh">42sh</a>
+                                <a class="dropdown-item active" href="/Corewar">Corewar</a>
+                                <a class="dropdown-item" href="/MyRPG">MyRPG</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/Popeye">Popeye</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container" align="left">
+            <h1 align="center">💻 Corewar 🗡️</h1>
+            <p><img src="https://itskarmaoff.github.io/Corewar/preview.png" alt="Corewar"></p>
+            <h2 id="description-📝">Description 📝</h2>
+            <p>The <strong>Corewar</strong> is a project carried out by <strong>groups of 2</strong> (see <a href="#contributors-👥">Contributors</a>), during our <strong>1st year</strong> in <a href="https://www.epitech.eu/"><strong>EPITECH</strong></a> Grand Ecole program.<br>
+            Its purpose is to recreate in <a href="https://en.wikipedia.org/wiki/C_(programming_language)"><strong>C</strong></a> a <a href="https://en.wikipedia.org/wiki/Core_War"><strong>Core War video game</strong></a>.</p>
+            <h2 id="usage-⚔️">Usage ⚔️</h2>
+            <p>You can run Corewar like this :</p>
+            <p><code class="prism language-sh">./corewar -dump 1000 -n 1 -a 0 champion.cor -n 2 -a 200 champion.cor</code></p>
+            <p>For more information, please see the help section.</p>
+            <p><code class="prism language-sh">&gt; ./corewar --help<br>USAGE<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;./corewar [-dump nbr_cycle] [[-n prog_number][-a load_address] prog_name] ...<br>DESCRIPTION<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-dump nbr_cycle dumps the memory after the nbr_cycle execution (if the round isn't already over) with the following format: 32 bytes/line in hexadecimal (A0BCDEFE1DD3...)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-n prog_number sets the next program's number. By default, the first free number in the parameter order<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-a load_address sets the next program's loading address. When no address is specified, optimize the addresses so that the processes are as far away from each other as possible. The addresses are MEM_SIZE modulo</code></p>
+            <h2 id="result-🚩">Result 🚩</h2>
+            <p>The result of this project is an <strong>almost perfect Corewar</strong>.<br>
+            If you discover a <strong>problem</strong> or an <strong>error</strong>, don’t hesitate to <strong>create an issue</strong> and <strong>report it</strong> to us as soon as possible.</p>
+            <h3 id="my.epitech.eu-result"><a href="http://my.epitech.eu">my.epitech.eu</a> result</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Percentage</th>
+                        <th>Numbers of tests</th>
+                        <th>Crash</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Check binary</td>
+                        <td>100%</td>
+                        <td>1/1</td>
+                        <td>No</td>
+                    </tr>
+                    <tr class="table-success">
+                        <td><strong>Results</strong></td>
+                        <td><strong>100%</strong></td>
+                        <td><strong>1/1</strong></td>
+                        <td><strong>No</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 id="tests-and-code-coverage">Tests and code coverage</h3>
+            <p>Functional tests were carried out with a <strong>bash tester</strong> and <strong>unit tests</strong> using <a href="https://criterion.readthedocs.io/en/master/intro.html">criterion</a>.<br>
+            Unit tests are still to be performed, but a large part of the code is already covered:</p>
+            <ul>
+                <li>Lines: 100%</li>
+                <li>Functions: 100%</li>
+                <li>Branches: 45.2%</li>
+            </ul>
+            <p>You can run the tester with this command :</p>
+            <p><code class="prism language-sh">./tester.sh</code></p>
+            <p>You can compile the project and run the tester with this command :</p>
+            <p><code class="prism language-sh">make tests</code></p>
+            <p>You can compile the project and run the unit tests with this command :</p>
+            <p><code class="prism language-sh">make tests_run</code></p>
+            <p>For more details, please click <a href="https://itskarmaoff.github.io/Corewar/tests/test.html">here</a>.</p>
+            <h2 id="compilation-🛠️">Compilation 🛠️</h2>
+            <p>You can compile the project with this command :</p>
+            <p><code class="prism language-sh">make</code></p>
+            <p>If you want to debug the program, you can compile the project with this :</p>
+            <p><code class="prism language-sh">make debug</code></p>
+            <p>If you want to clean the project, you can run this command :</p>
+            <p><code class="prism language-sh">make fclean</code></p>
+            <p>You can clean and compile the project with <code>make re</code> and for debugging <code>make re_debug</code></p>
+            <p>You can compile the unit tests with this command :</p>
+            <p><code class="prism language-sh">make unit_tests</code></p>
+            <h2 id="documentation-📚">Documentation 📚</h2>
+            <p>The documentation is accessible <a href="https://itskarmaoff.github.io/Corewar/html/">here</a>.</p>
+            <p>You can generate the documentation with this command :</p>
+            <p><code class="prism language-sh">make doc</code></p>
+            <p>You need multiple packages to generate it:</p>
+            <ul>
+                <li>doxygen</li>
+                <li>doxygen-latex</li>
+                <li>graphviz</li>
+            </ul>
+            <h2 id="contributors-👥">Contributors 👥</h2>
+            <p>This project was carried out by the following developers:</p>
+            <ul>
+                <li><a href="https://github.com/ItsKarmaOff" rel="nofollow">Christophe VANDEVOIR</a></li>
+                <li><a href="https://github.com/toro-nicolas" rel="nofollow">Nicolas TORO</a></li>
+            </ul>
+        </div>
+        <script src="/scripts/custom.js"></script>
+        <script src="/scripts/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
